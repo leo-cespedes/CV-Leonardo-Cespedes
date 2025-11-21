@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Leonardo Cespedes</title>
+    <style>
+        /* Estilos Generales */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border-radius: 8px 8px 0 0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { font-weight: 300; margin-top: 10px; font-size: 1.2em; }
+        .contact-info { margin-top: 15px; font-size: 0.9em; }
+        .contact-info a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
+
+        /* Secciones */
+        section { padding: 30px 20px; border-bottom: 1px solid #eee; }
+        h3 { color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; border-left: 5px solid var(--accent-color); padding-left: 10px; }
+        
+        /* Experiencia y Educación */
+        .job, .edu-item { margin-bottom: 20px; }
+        .job-title { font-weight: bold; font-size: 1.1em; }
+        .job-date { color: #777; font-size: 0.9em; font-style: italic; }
+        .job-desc ul { margin-top: 5px; padding-left: 20px; }
+        
+        /* Skills */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .skill-category strong { color: var(--accent-color); }
+
+        /* Botonera */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #eee; }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .contact-info a { display: block; margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Leonardo Cespedes</h1>
+        <h2>Estudiante de Lic. Biotecnología y Biología Molecular</h2>
+        <p>Especialista en Control de Calidad y Microbiología</p>
+        <div class="contact-info">
+            <a href="mailto:cespedes.ezequiel.lc@gmail.com">✉ Enviar Email</a>
+            <a href="https://www.linkedin.com/in/leonardo-cespedes-unlp" target="_blank">in LinkedIn</a>
+            <span>📍 Berazategui, Buenos Aires</span>
+        </div>
+    </header>
+
+    <section id="perfil">
+        <h3>Sobre Mí</h3>
+        <p>Soy un estudiante avanzado, próximo a recibirme, con experiencia en control de calidad y microbiología en alimentos. A lo largo de mi formación participé en diversas actividades que me permitieron fortalecer mis habilidades técnicas y de trabajo en equipo. Actualmente busco aplicar mis conocimientos en un entorno de trabajo que me permita seguir formándome como biotecnólogo.</p>
+    </section>
+
+    <section id="investigacion">
+        <h3>🔬 Trabajo Final de Grado</h3>
+        <div class="job">
+            <div class="job-title">Actividad antimicrobiana de kéfir frente a C. difficile</div>
+            <div class="job-date">03/2025 - Actualidad</div>
+            <div class="job-desc">
+                <ul>
+                    <li>Trabajo en condiciones de <strong>BSL-2</strong>.</li>
+                    <li>Cultivo de microorganismos en ambientes aeróbicos y anaeróbicos.</li>
+                    <li>Manejo de cultivos celulares y operación de cabina de bioseguridad Clase II.</li>
+                    <li>Uso de autoclave para esterilización de material biológico.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h3>Experiencia Laboral</h3>
+        
+        <div class="job">
+            <div class="job-title">Coordinador en Proyecto: Kéfir UNLP</div>
+            <div class="job-date">06/2024 - Actualidad</div>
+            <div class="job-desc">
+                <ul>
+                    <li>Gestión y control del stock de gránulos de kéfir.</li>
+                    <li>Supervisión de controles microbiológicos según el Código Alimentario Argentino (CAA).</li>
+                    <li>Dirección y organización de becarios en distintas actividades.</li>
+                    <li>Calibración de material de laboratorio.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-title">Ayudante de Cátedra | Química General UNLP</div>
+            <div class="job-date">06/2022 - 06/2025</div>
+            <div class="job-desc">
+                <ul>
+                    <li>Instrucción sobre el uso correcto de materiales de laboratorio.</li>
+                    <li>Preparación de reactivos y control de instrumentos.</li>
+                    <li>Asistencia a estudiantes en la resolución de ejercicios.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h3>Formación Académica</h3>
+        <div class="edu-item">
+            <div class="job-title">Lic. en Biotecnología y Biología Molecular</div>
+            <div class="job-date">Universidad Nacional de La Plata (UNLP) | 2018 - Actualidad</div>
+        </div>
+        <div class="edu-item">
+            <div class="job-title">Cursos y Certificaciones</div>
+            <ul>
+                <li>Curso teórico "High-performance liquid chromatography" (HPLC) - UNLP</li>
+                <li>Excel Intermedio - Santander Open Academy</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="extension">
+        <h3>Extensión Universitaria</h3>
+        <div class="job">
+            <div class="job-title">Integrante del Proyecto: Kéfir UNLP</div>
+            <div class="job-date">03/2019 - 05/2024</div>
+            <p>Control de calidad microbiológico y promoción de prácticas saludables.</p>
+        </div>
+        <div class="job">
+            <div class="job-title">Integrante del Proyecto: Taller de Aguas UNLP</div>
+            <div class="job-date">03/2019 - 03/2020</div>
+            <p>Análisis fisicoquímico y microbiológico de aguas en zonas rurales.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>Habilidades</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Hard Skills</strong>
+                <ul>
+                    <li>Análisis microbiológicos (Alimentos/Agua)</li>
+                    <li>Normativas CAA</li>
+                    <li>Manejo de Autoclave y Cabinas de Seguridad</li>
+                    <li>Preparación de reactivos</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <strong>Soft Skills</strong>
+                <ul>
+                    <li>Liderazgo y coordinación</li>
+                    <li>Trabajo interdisciplinario</li>
+                    <li>Resolución de problemas</li>
+                    <li>Adaptabilidad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #777;">
+        <p>&copy; 2025 Leonardo Cespedes - Diseñado para Web</p>
+    </footer>
+</div>
+
+</body>
+</html>
